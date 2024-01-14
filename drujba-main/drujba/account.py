@@ -8,19 +8,19 @@ from prompt_toolkit import PromptSession
 from prompt_toolkit.completion import WordCompleter
 from random import choice
 from string import ascii_letters
-from drujba.FolderPath import FOLDER_ACCOUNTS_PATH, FOLDER_NOTESBOOKS_PATH, FOLDER_ADDRESSBOOKS_PATH, create_folders, create_base_json_files
+from FolderPath import FOLDER_ACCOUNTS_PATH, FOLDER_NOTESBOOKS_PATH, FOLDER_ADDRESSBOOKS_PATH, create_folders, create_base_json_files
 import os
-from drujba.Style import positive_action, command_message
-from drujba.Bot import MyCmd
-from drujba.Notes_book import NotesBook
-from drujba.Address_book import AddressBook
+from Style import positive_action, command_message
+from Bot import MyCmd
+from Notes_book import NotesBook
+from Address_book import AddressBook
 import imaplib
 
 import time
 
 
 class UserAccount():
-
+    
     def __init__(self, user_name=None, user_email=None, user_password=None, ):
         self._user_name = user_name
         self._user_password = UserPassword(user_password)
